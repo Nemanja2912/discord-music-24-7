@@ -8,7 +8,7 @@ class YouTubeProvider extends AbstractProvider {
   createStream(source) {
     const options = {
       quality: 'highestaudio',
-      highWaterMark: 1 << 25
+      highWaterMark: 1 << 30
     };
 
     if (youtubeCookie) {
